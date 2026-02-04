@@ -1,18 +1,19 @@
-/* =========================
-   Reset & Global Styles
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* -----------------------
+   Global Red Text
+------------------------ */
+body {
+  background: #fff;
+  color: #c0392b; /* bright fun red */
+  display: flex;
+  min-height: 100vh;
   font-family: "Helvetica", Arial, sans-serif;
 }
 
-body {
-  background: #fff;
-  color: #111;
-  display: flex;
-  min-height: 100vh;
+header p,
+footer,
+.project p {
+  color: #c0392b; /* make paragraphs red too */
+  opacity: 0.9;   /* optional: softer for paragraphs */
 }
 
 /* =========================
