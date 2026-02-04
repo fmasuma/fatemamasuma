@@ -1,3 +1,8 @@
+/* Force all text to be bright fun red */
+body, body * {
+  color: #c0392b !important;
+}
+
 /* Reset & Global */
 * {
   margin: 0;
