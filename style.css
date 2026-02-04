@@ -1,3 +1,5 @@
+body { background: yellow; }
+
 /* Force all text to be bright fun red */
 body, body * {
   color: #c0392b !important;
