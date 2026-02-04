@@ -1,19 +1,23 @@
-/* -----------------------
-   Global Red Text
------------------------- */
-body {
-  background: #fff;
-  color: #c0392b; /* bright fun red */
-  display: flex;
-  min-height: 100vh;
+/* =========================
+   Reset & Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Helvetica", Arial, sans-serif;
 }
 
-header p,
-footer,
-.project p {
-  color: #c0392b; /* make paragraphs red too */
-  opacity: 0.9;   /* optional: softer for paragraphs */
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #fff;
+  color: #c0392b; /* fun red text */
+}
+
+/* Make all text inside main inherit red */
+.main, .main * {
+  color: #c0392b;
 }
 
 /* =========================
@@ -31,13 +35,13 @@ footer,
 
 .sidebar a {
   text-decoration: none;
-  color: #c0392b; /* fun red text */
+  color: #c0392b;
   font-weight: bold;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .sidebar a:hover {
-  transform: translateX(5px);
+  transform: translateX(5px) rotate(-1deg);
   color: #e74c3c;
 }
 
@@ -61,21 +65,25 @@ header h1 {
   color: #c0392b;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  transform: rotate(-1deg); /* playful tilt */
 }
 
 header p {
-  color: #666;
   font-size: 1rem;
+  color: #c0392b;
+  opacity: 0.85;
 }
 
-/* Grid for projects or sections */
+/* =========================
+   Grid for Projects
+========================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-/* Project cards */
+/* Project Cards */
 .project {
   position: relative;
   overflow: hidden;
@@ -88,7 +96,7 @@ header p {
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) rotate(1deg);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
@@ -103,12 +111,14 @@ header p {
 .project h2 {
   font-size: 1.2rem;
   padding: 0.5rem;
+  color: #c0392b;
+  transform: rotate(-1deg);
 }
 
 .project p {
   font-size: 0.9rem;
   padding: 0 0.5rem 1rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 /* =========================
@@ -118,7 +128,7 @@ footer {
   margin-top: auto;
   padding: 2rem 0 0;
   font-size: 0.8rem;
-  color: #777;
+  color: #c0392b;
   border-top: 2px solid #ddd;
 }
 
@@ -133,8 +143,10 @@ footer {
     width: 100%;
     flex-direction: row;
     overflow-x: auto;
+    padding: 1rem;
   }
   .sidebar a {
     white-space: nowrap;
+    margin-right: 1rem;
   }
 }
