@@ -2,6 +2,15 @@
 body, body * {
   color: #c0392b !important;
 }
+h1, h2, p, a {
+  font-weight: bold;
+  transform: rotate(-1deg); /* tiny tilt for fun */
+  transition: transform 0.2s;
+}
+
+.project:hover h2, .project:hover p {
+  transform: rotate(1deg) translateY(-2px);
+}
 
 /* Reset & Global */
 * {
